@@ -1,0 +1,409 @@
+/* Didn't seem to be able to get font import to work */
+@import url('http://fonts.googleapis.com/css?family=Roboto'); 
+
+/* header and nav menu styling */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444444;
+    padding: 5px;
+    margin: 9px;
+}
+
+@media (max-width: 800px) {
+	.header {
+  	flex-direction: column;
+	}
+}
+
+.header-link{
+    color: #444444;
+    text-decoration: none;
+}
+
+.nav-menu-box-pipe{
+    width: 150px;
+    color: #ebebeb;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    padding: 25px;
+    margin: 50px;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    padding: 25px;
+    margin: 50px;
+}
+
+/* Homepage styling */
+.hero{
+    position: relative;
+    text-align: center;
+  }
+
+.hero-image{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+.hero-para{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 0 0 7px #000000;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Maybe re-visit below, might be a bit of a hacky way to move text up */
+    padding-bottom: 18%; 
+}
+
+@media (max-width: 800px) {
+	.hero-para {
+  	font-size: 20px;
+	}
+  }
+
+#generator-button{
+    font-size: 18px;
+    color: #7a7a7a;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 15px 32px;
+}
+
+.homepage-blurb{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 2%;
+    color: #444444;
+}
+
+@media (max-width: 800px) {
+	.homepage-blurb {
+  	font-size: 20px;
+	}
+}
+
+.blurb-sidekick-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .blurb-sidekick-container {
+      flex-direction: column;
+    }
+}
+
+.sidekick-image{
+    padding: 2%;
+}
+
+/* About page styling */
+.about-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 2%;
+    color: #444444;
+}
+
+@media (max-width: 800px) {
+	.about-text {
+  	font-size: 20px;
+	  }
+  }
+
+/* Daytrip page styling */
+  .main{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px rgb(189, 188, 188) solid; */
+    border-radius: 10px;
+    margin: auto 8em auto 8em;
+}
+
+.main-image{
+    object-fit: contain;
+    max-width: 900px;
+}
+
+.destination{
+    font-size: 36pt;
+    font-weight: bold;
+}
+
+.highlights{
+    text-align: center;
+    display: flex;
+    margin: 40px auto 20px auto;
+  
+}
+
+.icon-box{
+    font-size: 2em;
+    border-radius: 15px;
+    padding: 0.2em;
+    display: inline;
+    background-color: rgb(219, 219, 219);
+}
+
+.highlight{
+padding: 1em;
+margin: auto;
+}
+
+.info{
+    text-align: center;
+  
+    margin: 40px auto 20px auto;
+
+}
+
+.infobox{
+        border-radius: 15px;
+        padding: 0.2em;
+        display: inline;
+        background-color: rgb(248, 248, 248);
+        margin: auto;
+}
+
+/* Contact page styling */
+  .rectangle1 {
+    display: inline-block;
+      width: 1366px;
+      height: 300px;
+      padding: 8px 8px 8px 8px;
+      background: #255d2d;
+      border-color: #000000;
+      border-width: 1px;
+      border-style: solid;
+      text-align: center;
+  }
+  
+  .title2 {
+      margin: auto;
+      display: center;
+      width: 480px;
+      height: 124px;
+      text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+      color: #ffffff;
+      font-family: "Helvetica";
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 1.28;
+      letter-spacing: -0.5px;
+      text-align: center;
+  }
+  
+  .title3 {
+      margin: auto;
+      display: inline-block;
+      width: 301px;
+      height: 72px;
+      text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+      color: #ffffff;
+      font-family: "Helvetica";
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 1.28;
+      letter-spacing: 0.5px;
+      text-align: center;
+  }
+  
+  .contact-icon {
+      width: 60px;
+      height: 60px;
+    }
+  
+  #h1-2 {
+      margin-left: 300px;
+      width: 301px;
+      height: 72px;
+      color: #255d2d;
+      font-family: "Helvetica";
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 1.28;
+      letter-spacing: -0.5px;
+      text-align: left;
+  }
+  
+  #one {
+      margin-left: 300px;
+      width: 257px;
+      height: 91px;
+      color: #255d2d;
+      font-family: "Helvetica";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.3;
+      text-align: left;
+  }
+  
+  form {
+      /* position: absolute; */
+      top: 37em;
+      float:inline-start; display: flexbox;
+      margin-left: 200px;  
+      width: 84px;
+      height: 33px;
+      color: #232323;
+      font-family: "Helvetica";
+      font-weight: 400;
+      font-size: 16px;
+      text-align: left;
+      margin-top: 50px;
+  }
+  #input, #label {
+      width: 379px;
+      height: 50px;
+      padding: 8px 8px 8px 8px;
+      background: #ffffff;
+      border-color: #000000;
+      border-width: 1px;
+      border-style: solid;
+  }
+  
+  #full-name {
+      width: 84px;
+      height: 33px;
+      color: #232323;
+      font-family: "Helvetica";
+      font-weight: 400;
+      font-size: 16px;
+      text-align: left;
+  }
+  
+  #email {
+    width: 84px;
+      height: 33px;
+      color: #232323;
+      font-family: "Helvetica";
+      font-weight: 400;
+      font-size: 16px;
+      text-align: left;
+  }
+  
+  #message {
+      width: 84px;
+      height: 33px;
+      color: #232323;
+      font-family: "Helvetica";
+      font-weight: 400;
+      font-size: 16px;
+      text-align: left;
+  }
+  
+  #terms-and-conditions {
+      width: 283px;
+      height: 44px;
+      background: #ffffff;
+      color: #232323;
+      border-color: #232323;
+      border-width: 1.5px;
+      border-style: solid;
+      font-family: "Helvetica";
+      font-weight: 400;
+      font-size: 14px;
+      text-align: left;
+  }
+  
+  .button1 {
+    width: 120px;
+      height: 32px;
+      padding: 0px 10px 0px 10px;
+      background: #ebebeb;
+      color: #232323;
+      border-color: #232323;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 3px 3px 3px 3px;
+      font-family: "Helvetica";
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+  }
+  
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.message-container{
+    margin-top: 20px;
+}
+  
+/* Footer menu styling */
+.footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aaaaaa;
+    background-color: #f7f6f6;
+    padding: 5px;
+    margin:9px;
+}
+
+.footer-menu-box-one{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aaaaaa;
+    background-color: #f7f6f6;
+    padding: 5px;
+    margin:9px;
+}
+
+.footer-menu-box-two{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aaaaaa;
+    background-color: #f7f6f6;
+    padding: 5px;
+    margin:9px;
+}
+
+.footer-menu-box-pipe{
+    margin: 50px
+}
+
+.footer-menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-menu-horizontal-line{
+    width: 56px;
+    height: 0px;
+    border-color: #EBEBEB;
+    border-width: 2px;
+    border-style: solid;
+    border-top: 20%;
+}
+
+.footer-link{
+    color: #aaaaaa;
+    text-decoration: none;
+}
